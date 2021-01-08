@@ -1,0 +1,103 @@
+<!-- Modal -->
+<div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="RegistrationTitle" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <!-- title of modal -->
+        <h5 class="modal-title" id="RegistrationTitle">Registration</h5>
+        <!-- Close button -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- modal body -->
+      <div class="modal-body" style=" text-align: left!important;">
+        <form action="/index" method="POST">
+          <div class="row">
+           <div class="col">
+             <label for="validationCustom01">First name</label>
+             <input type="text" name="firstname" class="form-control" placeholder="First name">
+           </div>
+           <div class="col">
+             <label for="validationCustom02">Last name</label>
+             <input type="text" name="lastname" class="form-control" placeholder="Last name">
+           </div>
+          </div>
+          <!-- job details -->
+         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Service</label>
+         <select class="custom-select my-1 mr-sm-2" name="jobRole" id="inlineFormCustomSelectPref">
+           <option selected>Choose...</option>
+           <option value="Mechanic">Mechanic</option>
+           <option value="Plumber">Plumber</option>
+           <option value="Electrician">Electrician</option>
+           <option value="Tutor">Tutor</option>
+           <option value="Constructor">Constructor</option>
+           <option value="Painter">Painter</option>
+          </select>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <!-- gender information -->
+          <div class="form-group">
+            <label for="inputAddress">Gender</label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" value="Male" name="gender" checked>
+              <span>Male</span>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" value="female"  name="gender" >
+              <span>Female</span>
+            </div>
+            
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" value="other" name="gender">
+              <span>Other</span>
+            </div>
+          </div> 
+          <!-- contect details -->
+          <div class="form-group">
+            <label for="MobileNumber">Mobile Number</label>
+            <input type="Number" name="mobileNumber" class="form-control" id="MobileNumber" >
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Work Address</label>
+            <input type="text" class="form-control" name="workAddress" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Home Address</label>
+            <input type="text" class="form-control" name="homeAddress" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" name="city" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" name="state" class="form-control">
+                <option selected>Choose...</option>
+                <option>J & K</option>
+                <option>panjab</option>
+                <option>Hariyana</option>
+                <option>Rajsthan</option>
+                <option>gujrat</option>
+                <option>MP</option>
+                <option>UP</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Pin Code</label>
+              <input type="text" name="pinCode" class="form-control" id="inputZip">
+            </div>
+          </div>
+               <div class="modal-footer">
+        <button type="submit" value="employee" class="btn btn-primary">Register</button>
+        
+      </div>
+        </form> 
+      </div>
+ 
+    </div>
+  </div>
+</div>

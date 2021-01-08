@@ -1,0 +1,99 @@
+{{!-- <div class="row row-content">
+    <div class="col-12">
+        <h3>Send us your Feedback</h3>
+    </div>
+    <div class="col-12 col-md-9">
+        <form action="/feedback" method="POST">
+
+            <div class="form-group row">
+                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="mobnum" class="col-12 col-md-2 col-form-label">Mobile No.</label>
+                <div class="col-5 col-md-3">
+                    <input type="number" class="form-control" name="code" placeholder="country code">
+                </div>
+                <div class="col-7 col-md-7">
+                    <input type="number" name="mobileNumber" class="form-control" placeholder="Mob. number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                    <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6 offset-md-2">
+                    <div class="form-check">
+                        <input type="checkbox" name="check" class="form-check-input" value="contect-me">
+                        <label class="form-check-label" for="approve">
+                            <strong>May we contact you?</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <select name="contect" class="form-control">
+                        <option selected>Tel.</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                <div class="col-md-10">
+                    <textarea name="feedback" class="form-control" rows="12"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                    <button type="submit" value="feedback" class="btn btn-primary">Send Feedback</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> --}}
+<div class="card">
+    <div class="card-body row">
+        <div class="col-5 text-center d-flex align-items-center justify-content-center">
+            <div class=" text-center">
+                <h1>HELPER</h1>
+                <p >Keep Helping and Spread Smile!</p>
+                <img src="icon/logo.png" id="icon">
+            </div>
+        </div>
+        <div class="col-7">
+            <form action="/message" method="POST">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" id="inputName" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">E-Mail</label>
+                    <input type="email" id="inputEmail" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject">Subject</label>
+                    <input type="text" id="inputSubject" name="subject" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea id="inputMessage" name="message" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Send message">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

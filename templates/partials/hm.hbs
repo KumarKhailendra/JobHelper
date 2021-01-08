@@ -1,0 +1,12 @@
+{{#each jobtypes}}
+<a href="/home?jobRole={{this.job}}" >
+        <div class="sr-items">
+           <i class="{{this.logo}}"></i>
+          
+          {{!-- <h4>Mechanic</h4> --}}
+          <h4>{{this.job}}</h4>
+          {{!-- <p>Fusce blandit commondo metus eu suscripit. Nullam ut blandit neque. Aenean nec tellus ac velit elementum tempor. Pellentesque nec ipsum</p> --}}
+          <p>{{this.desc}}</p>
+        </div>
+        </a>
+        {{/each}}

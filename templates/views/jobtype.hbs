@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{>header}}
+</head>
+<body>
+    <form action="/jobtype" method="POST">
+          <div class="row">
+           <div class="col">
+             <label for="validationCustom01">job name</label>
+             <input type="text" name="job" class="form-control" placeholder="job name">
+           </div>
+           <div class="col">
+             <label for="validationCustom02">Last name</label>
+             <input type="text" name="logo" class="form-control" placeholder="logo name">
+           </div>
+           <div class="col">
+             <label for="validationCustom02">decs</label>
+             <input type="text" name="desc" class="form-control" placeholder="decs ">
+           </div>
+         <div class="modal-footer">
+        <button type="submit" value="jobtype" class="btn btn-primary">Register</button>
+        
+      </div>
+          </div>
+         
+        </form>
+        {{>footer}}
+</body>
+</html>

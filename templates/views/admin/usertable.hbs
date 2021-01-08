@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Khailendra Kumar">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      {{!-- <link rel="stylesheet" href="../css/style.css"> --}}
+    <link rel="stylesheet" type="text/css" href="../admin-css/style.css">
+    
+    <title>Sidebar Deshborad Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({ selector: 'textarea' });</script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="header">
+        <div class="left_area">
+            <h3>Admin <span>HeLpEr</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </div>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+        <center>
+            <img src="../admin-images/khailendra.jpg" class="profile_image" alt="">
+            <h4>Khailendra</h4>
+        </center>
+        <a href="/admin/dashboard"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="/admin/usertable" style="background-color: #19B3D3;"><i class="fas fa-table"></i><span>User
+                Table</span></a>
+        <a href="/admin/workertable"><i class="fas fa-table"></i><span>Worker Tables</span></a>
+        <a href="/admin/serviceforms"><i class="fas fa-th"></i><span>Service Forms</span></a>
+        {{!-- <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> --}}
+    </div>
+    <!--sidebar end-->
+    <div class="content">
+        <div class="container">
+            <div class="table-wrapper">
+                <!-- Modal -->
+<div class="services" style="padding: 20px;">
+  <div class="card-dialog card-dialog-centered" role="document" style=" max-width: 1000px;">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h3 class="card-title" id="exampleModalLongTitle">Our HeLpErs</h3>
+        <a href="/">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button></a>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="card">
+             <div class="card-header">
+                <h3 class="card-title">DataTable with default features</h3>
+              </div> -->
+        <!-- /.card-header -->
+        <div class="card-body">
+          <table id="example1" class="table table-bordered striped ">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>city</th>
+                <th>Mobile Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each employees}}
+              <tr>
+                <td>{{this.firstname}}</td>
+                <td>{{this.lastname}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.city}}</td>
+                <td>{{this.mobileNumber}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Mobile Number</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+
+
+    </div>
+  </div>
+</div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../plugins/jszip/jszip.min.js"></script>
+    <script src="../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+        <div class="jumbotron text-center" style="margin-bottom:0">
+  <footer class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="col-4 offset-1 col-sm-2">
+                   <h5>Links</h5>
+                   <ul class="list-unstyled">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="./about.html">About</a></li>
+                       <li><a href="./contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <div class="col-7 offset-4 col-sm-5" >
+                   <h5>Our Address</h5>
+                   <address>
+                 Central  University Of Haryana<br>
+                 Mahendragarh, Haryana<br>
+                 India<br>
+                 <i class="fa fa-phone fa-lg"></i>: +91 1234567890<br>
+                 <i class="fa fa-fax fa-lg"></i>: +91 1234567890<br>
+                 <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:Ask4help@helpnet.com">Ask4help@helpnet.com</a>
+              </address>
+               </div>
+               <div class="col-12 col-sm-4 align-self-center">
+                   <div class="text-center">
+                       <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                       <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                       <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                       <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                       <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube-play fa-lg"></i></a>
+                       <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                   </div>
+               </div>
+          </div>
+          <div class="row justify-content-center">
+               <div class="col-auto">
+                   <p>© Copyright 2020 HeLpEr</p>
+               </div>
+          </div>
+       </div>
+   </footer>
+</div>
+<script>
+                  function menuToggle(){
+                      const toggleMenu = document.querySelector('.menu');
+                      toggleMenu.classList.toggle('active');
+                      }
+                </script>
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+</body>
+</html>

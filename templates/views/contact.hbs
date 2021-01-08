@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project</title>
+    {{>header}}
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+
+</head>
+
+<body>
+    {{>navbar}}
+    </div>
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./UIBootStrap.html">Home</a></li>
+                <li class="breadcrumb-item active">Contact Us</li>
+            </ol>
+            <div class="col-12">
+                <h3>Contact Us</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Location Information</h3>
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                <h5>Our Address</h5>
+                <address style="font-size: 100%">
+                    Central University Of Haryana<br>
+                    Mahendragarh,Haryana<br>
+                    India<br>
+                    <i class="fa fa-phone"></i>: +91 123 456 7890<br>
+                    <i class="fa fa-fax"></i>: +91 123 456 7890<br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:Ask4help@helpnet.com">Ask4help@helpnet.com</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Map of our Location</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.9677427371184!2d76.14394291491683!3d28.359824832526183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391295bcff5e0945%3A0x8001a9c29431ad89!2sAcademic%20Block%2C%20CUH!5e0!3m2!1sen!2sin!4v1602086516680!5m2!1sen!2sin"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+8094270183"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-facebook"></i> FaceBook</a>
+                    <a role="button" class="btn btn-success" href="mailto:Info@helper.com"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+            </div>
+        </div>
+        {{>feedback}}
+    </div>
+    {{>footer}}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project</title>
+{{>header}}
+
+</head>
+<body>
+{{>navbar}}
+<div class="container">
+       <div class="row">
+           <ol class="col-12 breadcrumb">
+               <li class="breadcrumb-item"><a href="./UIBootStrap.html">Home</a></li>
+               <li class="breadcrumb-item active">About us</li>
+           </ol>
+           <div class="col-12">
+              <h3>About Us</h3>
+              <hr>
+           </div>
+       </div>
+
+       <div class="row">
+           <div class="col-6 col-sm-6">
+               <h2>Our Goal</h2>
+               <p>Goal of our team is to provide help of anyone easily anytime ,anywhere on single platform.Help May be of anytype physical,mechanical,electrical etc.You just need to ask for help and if available you will get help.</p>
+           </div>
+
+           <div class="col-12">
+               <div class="card card-body bg-light">
+                   <blockquote class="blockquote">
+                       <p class="mb-0">Get Help and Do Help to Others and create a helpful society.</p>
+                       <footer class="blockquote-footer">HeLpEr,
+                           <cite title="Source Title">Try to Spread Smile by appreciating the others Help.</cite>
+                       </footer>
+                   </blockquote>
+               </div>
+           </div>
+       </div>
+        <div id="accordion">
+                   <div class="card">
+                       <div class="card-header" role="tab" id="peterhead">
+                       <h3 class="mb-0">
+                           <a data-toggle="collapse" data-target="#peter">
+                           Dr. Benay Ray <small>Assistant Professor && Supervisor</small>
+                           </a>
+                       </h3>
+                       </div>
+                       <div class="collapse show" id="peter" data-parent="#accordion">
+                           <div class="card-body">
+                               <p class="d-none d-sm-block">Qualification: Ph.D. , M.Tech, B.Tech
+
+                             Specialization: Cloud Computing, Cloud Federation, Distributed Systems,IoT
+
+                             Teaching Experience: 1.5 Years (till february 2020)</p>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="card">
+                       <div class="card-header" role="tab" id="dannyhead">
+                       <h3 class="mb-0">
+                           <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                           Rahul Ranjan <small>Student</small>
+                           </a>
+                       </h3>
+                      </div>
+                     <div class="collapse" id="danny" data-parent="#accordion">
+                       <div class="card-body">
+                           <p class="d-none d-sm-block" >Student oF B.Tech(CSE) ,VII Sem having Roll 11506.
+                           One of the Team Member under Benay Sir.</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="card">
+                       <div class="card-header" role="tab" id="agumbehead">
+                       <h3 class="mb-0">
+                           <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                           Vaibhav Kumar <small>Student</small>
+                           </a>
+                       </h3>
+                   </div>
+                   <div class="collapse" id="agumbe" data-parent="#accordion">
+                       <div class="card-body">
+                           <p class="d-none d-sm-block" >Student oF B.Tech(CSE) ,VII Sem having Roll 11520.
+                           One of the Team Member under Benay Sir.</p>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="card">
+                       <div class="card-header" role="tab" id="albertohead">
+                       <h3 class="mb-0">
+                           <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                           Abhishek Kumar <small>Student</small>
+                           </a>
+                       </h3>
+                   </div>
+                   <div class="collapse" id="alberto" data-parent="#accordion">
+                       <div class="card-body">
+                         <p class="d-none d-sm-block" >Student oF B.Tech(CSE) ,VII Sem having Roll 11520.
+                         One of the Team Member under Benay Sir.</p>
+                        </div>
+                   </div>
+               </div>
+            </div>
+      </div>
+{{>footer}}
