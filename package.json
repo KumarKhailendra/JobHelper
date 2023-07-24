@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/app.js -e js, hbs"
   },
-  "author": "vaibhav kumar",
+  "author": "Khailendra Prasad",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
